@@ -15,11 +15,11 @@ const Home = () => {
 
       if (searchOption === 'shows') {
         result = await searchForShows(q);
-        setapiData(result);
       } else {
         result = await searchForPeople(q);
-        setapiData(result);
       }
+
+      setapiData(result);
     } catch (error) {
       setApiDataError(error);
     }
