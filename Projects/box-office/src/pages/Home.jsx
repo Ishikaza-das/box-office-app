@@ -11,7 +11,7 @@ const Home = () => {
   const { data: apiData, error: apiDataError } = useQuery({
     queryKey: ['search', filter],
     queryFn: () =>
-      filter.searchOption === 'show'
+      filter.searchOption === 'shows'
         ? searchForShows(filter.q)
         : searchForPeople(filter.q),
     enabled: !!filter,
