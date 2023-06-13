@@ -7,7 +7,7 @@ const ShowMainData = ({ image, name, rating, summary, genres }) => {
         <h1>{name}</h1>
         <div>{rating.average || 'N/A'}</div>
 
-        <div dangerouslySetInnerHTML={{ _html: summary }} />
+        <div dangerouslySetInnerHTML={{ __html: summary }} />
 
         <div>
           Genres:
