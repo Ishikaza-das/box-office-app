@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Seasons = ({ seasons }) => {
   return (
     <SeasonsWrapper>
-      <p>Seasons in total: {seasons.lenght}</p>
+      <p>Seasons in total: {seasons.length}</p>
       <p>
         Episode in total:{' '}
         {seasons.reduce((sum, season) => sum + season.episodeOrder, 0)}
