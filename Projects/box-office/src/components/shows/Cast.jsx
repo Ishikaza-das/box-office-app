@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import imagenotfoundsrc from '../../lib/image-not-found.png';
 
 const Cast = ({ cast }) => {
   return (
@@ -6,9 +7,7 @@ const Cast = ({ cast }) => {
       {cast.map(({ person, character, voice }) => (
         <div key={person.id} className="class-item">
           <div className="pic-wrapper">
-            <img
-              src={person.image ? person.image.medium : '/image-not-found.png'}
-            />
+            <img src={person.image ? person.image.medium : imagenotfoundsrc} />
           </div>
           <div className="actor">
             {person.name} | {character.name} {voice && '| voiceover'}
