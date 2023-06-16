@@ -38,7 +38,7 @@ const SearchForm = ({ onSearch }) => {
 
       <RadiosWrapper>
         <CustomRadio
-          label="Shows"
+          lable="Shows"
           name="search-option"
           value="shows"
           checked={searchOption === 'shows'}
@@ -46,7 +46,7 @@ const SearchForm = ({ onSearch }) => {
         />
 
         <CustomRadio
-          label="Actors"
+          lable="Actors"
           name="search-option"
           value="actors"
           checked={searchOption === 'actors'}
